@@ -2,11 +2,13 @@
 <html><meta charset="utf-8"><body>
 <script>
  //Tell the browser to register the JavaScript file as the "service worker"
- (async sw => try {
+ (async sw => {
+  try {
   const reg = await navigator.serviceWorker.register(sw);
   console.log(`Registration succeeded. Scope is ${reg}`);
   } catch(error) {
   console.log(`Registration failed with ${error}`);
+  }
  })('/serviceworker/sw.js');//méthode version asyncawait 
 </script>
 </body></html>
