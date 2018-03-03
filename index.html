@@ -1,8 +1,7 @@
 <!DOCTYPE>
 <html><meta charset="utf-8"><body>
-<script>
- //Tell the browser to register the JavaScript file as the "service worker"
- (async sw => {
+<script> 
+ (async sw => {//Tell the browser to register the JavaScript file as the "service worker"
   try {
   const reg = await navigator.serviceWorker.register(sw);
   console.log(`Registration succeeded. Scope is ${reg.scope}`);//Registration succeeded. Scope is [object ServiceWorkerRegistration]
