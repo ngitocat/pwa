@@ -7,8 +7,9 @@ self.addEventListener('activate', function(event) {
   console.log("SW activated");
 });
 self.addEventListener('fetch', function(event) {
- event.respondWith(
  console.log("Caught a fetch!");
+ event.respondWith(
+ 
  new Response("Hello from your friendly neighbourhood service worker!");
  )
 })
