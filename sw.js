@@ -1,1 +1,1 @@
-self.addEventListener('fetch', event => event.respondWith(new Response("Hello from your friendly neighbourhood service worker!")))
+self.addEventListener('fetch', event => event.respondWith(new Response("Hello World from your friendly neighbourhood service worker!")))
