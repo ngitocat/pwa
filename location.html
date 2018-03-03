@@ -1,0 +1,8 @@
+<!DOCTYPE>
+<html><meta charset="utf-8"><body>
+<script>
+ Notification.requestPermission().then(status => console.log(status));
+ navigator.geolocation.getCurrentPosition(position => new Notification('My Position', {body: position});//A Geolocation request can only be fulfilled in a secure context.
+ 
+</script>
+</body></html>
