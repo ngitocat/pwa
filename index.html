@@ -4,11 +4,11 @@
  //Tell the browser to register the JavaScript file as the "service worker"
  (async sw => {
   try {
-  const reg = await navigator.serviceWorker.register(sw);
+  const reg = await navigator.serviceWorker.register(sw);//
   console.log(`Registration succeeded. Scope is ${reg}`);
-  } catch(error) {
+  } catch(error) {//Registration failed with TypeError: ServiceWorker script at https://ngitocat.github.io/serviceworker/sw.js for scope https://ngitocat.github.io/serviceworker/ encountered an error during installation.
   console.log(`Registration failed with ${error}`);
   }
- })('/serviceworker/sw.js');//méthode version asyncawait 
+ })('/pwa/sw.js');//méthode version asyncawait 
 </script>
 </body></html>
