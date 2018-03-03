@@ -1,0 +1,12 @@
+<!DOCTYPE>
+<html><meta charset="utf-8"><body>
+ <video></video>
+<script>
+ navigator.mediaDevices.getUserMedia({video: true, audio: true}).then(stream => {	
+	var videoElement = document.querySelector('video');
+	videoElement.srcObject = stream;
+ videoElement.play();
+ console.log(stream);
+}).catch(err => console.log(err)); 
+</script>
+</body></html>
