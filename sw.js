@@ -6,4 +6,4 @@ self.addEventListener('install', function(event) {
 self.addEventListener('activate', function(event) {
   console.log("SW activated");
 });
-self.addEventListener('fetch', function(event) {event.respondWith(new Response('Hello from your friendly neighbourhood service worker!'))})
+self.addEventListener('fetch', function(event) {event.respondWith(new Response("Hello from your friendly neighbourhood service worker!"))})
